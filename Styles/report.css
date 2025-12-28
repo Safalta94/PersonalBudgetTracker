@@ -1,0 +1,114 @@
+/* Report Container */
+.report-container {
+    max-width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Filter Section */
+.filter-container {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-container label {
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+.filter-container select {
+    padding: 6px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Chart Section */
+.chart-container {
+    margin-bottom: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.chart-container h3 {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+canvas {
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+/* Two Charts in First Row, One Below */
+.chart-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.chart-container {
+    flex: 1 1 45%; /* Allows two charts to fit side by side */
+    max-width: 45%;
+}
+
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 160px;
+    }
+
+    .content {
+        margin-left: 180px;
+    }
+
+    .report-container {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .chart-container h3 {
+        font-size: 14px;
+    }
+
+    /* Stacking Charts in Smaller Screens */
+    .chart-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chart-container {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}

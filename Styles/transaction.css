@@ -1,0 +1,72 @@
+/* Transactions section */
+section {
+  max-width: 90%;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Title */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2C3E50;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+thead {
+  background: #2C3E50;
+  color: white;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+th a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+th a:hover {
+  color: #1ABC9C;
+}
+
+tbody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+/* Amount Styling */
+td:nth-child(3) {
+  font-weight: bold;
+  color: #27AE60;
+}
+
+/* Income and Expense Colors */
+td:first-child {
+  font-weight: bold;
+}
+
+td:first-child:contains('Income') {
+  color: #27AE60;
+}
+
+td:first-child:contains('Expenses') {
+  color: #E74C3C;
+}

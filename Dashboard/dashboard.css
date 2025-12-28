@@ -1,0 +1,50 @@
+
+  .dashboard {
+    padding: 20px;
+    text-align: center;
+  }
+  .summary {
+    display: flex;
+    gap: 5px;
+    margin: 20px 0;
+  }
+  .card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1;
+  }
+  .card h2{
+    margin-bottom: 12px;
+  }
+
+  #total-income{
+    font-weight: 600;
+    color: green;
+  }
+  #total-expenses{
+    font-weight: 600;
+    color: red;
+  }
+  #balance{
+    font-weight: 600;
+    color: blue;
+  }
+
+  .recent-transactions table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .recent-transactions th,
+  .recent-transactions td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .recent-transactions th {
+    background-color: #f1f1f1;
+  }
+  
